@@ -1,0 +1,184 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #fff0f5;
+    color: #543444;
+}
+
+.header {
+    background: linear-gradient(135deg, #ff7eb3, #e75480);
+    color: white;
+    text-align: center;
+    padding: 32px 15px;
+}
+
+.header h1 {
+    margin: 0 0 10px;
+    font-size: 32px;
+}
+
+.header p {
+    margin: 0;
+}
+
+nav {
+    background: #fff;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 2px 6px #00000012;
+}
+
+nav a {
+    color: #c13570;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 15px;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 0 15px;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 14px;
+    box-shadow: 0 4px 15px #00000010;
+}
+
+h2 {
+    color: #d63384;
+    margin-top: 0;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin: 15px 0 7px;
+}
+
+input, select {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ffc2d8;
+    border-radius: 8px;
+    font-size: 15px;
+    background: white;
+}
+
+input:focus, select:focus {
+    outline: 2px solid #ff9ac2;
+}
+
+button, .btn {
+    display: inline-block;
+    background: #e75480;
+    color: white;
+    padding: 11px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+button:hover, .btn:hover {
+    background: #c13570;
+}
+
+button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.small {
+    padding: 8px 12px;
+    margin: 0;
+}
+
+.danger {
+    background: #dc3545;
+}
+
+.danger:hover {
+    background: #a71d2a;
+}
+
+.secondary {
+    background: #777;
+}
+
+.table-wrap {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th {
+    background: #ffb6d0;
+    color: #633349;
+}
+
+th, td {
+    padding: 12px;
+    border-bottom: 1px solid #f4d5e0;
+    text-align: left;
+}
+
+tr:hover {
+    background: #fff7fa;
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.actions form {
+    margin: 0;
+}
+
+.alert {
+    background: #d7f5e3;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.alert.error {
+    background: #ffd6df;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    color: #aa5680;
+}
+
+@media (max-width: 600px) {
+    .header h1 {
+        font-size: 25px;
+    }
+
+    .card {
+        padding: 15px;
+    }
+
+    nav a {
+        margin: 0 8px;
+    }
+}
